@@ -23,17 +23,20 @@ class CaseStudy3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return const Padding(
+      padding: EdgeInsets.only(top:10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           NewsCard(
               title: "Gue Tunjukin, Rumah Sudah Jadi",
-              imageUrl: 'https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp'
+              imageUrl: 'https://www.thehousedesigners.com/images/plans/01/URD/bulk/6583/the-destination-front-rendering_m.webp',
+              deskripsi: 'Dan siap Huniiiiiiiiiiiiiiiiiiiiiii'
           ),
           SizedBox(height: 16),
           NewsCard(
               title: "Siapa Itu Lucia Valina!?",
+              deskripsi: 'Orang paling baik di duniaaaaaaaa',
               imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_46HoWPZbCT2AyX2K55Y06i21CGZDzpG-SQ&sl')
         ],
       ),
@@ -44,8 +47,9 @@ class CaseStudy3 extends StatelessWidget {
 class NewsCard extends StatelessWidget {
   final String title;
   final String imageUrl;
+  final String deskripsi;
 
-  const NewsCard({super.key, required this.title, required this.imageUrl});
+  const NewsCard({super.key, required this.title, required this.imageUrl, required this.deskripsi});
 
   @override
   Widget build(BuildContext context) {
@@ -79,12 +83,21 @@ class NewsCard extends StatelessWidget {
             ),
           ),
           Padding(
+            padding: const EdgeInsets.only(left: 12.0),
+            child: Text(
+                deskripsi,
+                style: const TextStyle(
+                  fontSize: 12,
+                )
+            ),
+          ),
+          Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: TextButton(
               onPressed: () {},
               style: TextButton.styleFrom(
                 foregroundColor: Colors.blue,
-                padding: EdgeInsets.all(8.0)
+                padding: const EdgeInsets.all(8.0)
               ),
               child: const Text('Read More'),
             ),
