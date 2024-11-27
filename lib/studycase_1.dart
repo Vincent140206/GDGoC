@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const CaseStudy1());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -40,16 +40,16 @@ class CaseStudy1 extends StatelessWidget {
             ),
             const CircleAvatar(
               radius: 55,
-              backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSxEeP7gl-3dSQMRXMsnPd0zetnr9EgMXUw&s'),
+              backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSxEeP7gl-3dSQMRXMsnPd0zetnr9EgMXUw&s'), // Ganti dengan URL gambar yang valid
             ),
           ],
         ),
         const SizedBox(height: 16),
         const Text(
-          'Your Name',
+          'Vincent Ganteng',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        const Text('Your Position'),
+        const Text('Diatas Kasur'),
         const SizedBox(height: 16),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
