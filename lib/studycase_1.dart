@@ -40,7 +40,7 @@ class CaseStudy1 extends StatelessWidget {
             ),
             const CircleAvatar(
               radius: 55,
-              backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSxEeP7gl-3dSQMRXMsnPd0zetnr9EgMXUw&s'), // Ganti dengan URL gambar yang valid
+              backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSxEeP7gl-3dSQMRXMsnPd0zetnr9EgMXUw&s'), 
             ),
           ],
         ),
